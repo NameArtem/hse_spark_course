@@ -15,3 +15,12 @@ Note! Программа обновляется:
 |6| Рекомендательные системы на Spark |Готово (загрузить)|03.04.2021||
 |7| Spark Structure Streaming (+ интеграция со Spark ML) |Готово (загрузить)|10.04.2021||
 |8| Модели в прод. Управленеи кластеровм  |Готово (загрузить)|17.04.2021||
+
+
+## MapReduce. Введение в распределенные вычисления
+
+[презентация](https://github.com/NameArtem/hse_spark_course/tree/master/pres)
+
+[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d1)
+
+[домашнее задание](https://github.com/NameArtem/hse_spark_course/tree/master/homework/hw_1)
