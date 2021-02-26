@@ -1,9 +1,15 @@
 # hse_spark_course
 
-Note! Программа обновляется:
-- увеличено количество уроков с 6 до 8
-- добавлен материал про Scala
-- добавлен материал про функциональное программирование в Python
+## Cодержание
+- [MapReduce. Введение в распределенные вычисления](#t1)
+
+
+## Инфраструктура курса
+
+- [Локальный кластре на Docker](https://github.com/NameArtem/hadoop-spark-standalone-docker)
+- [DataBricks Community](/tutorials/databricks_totrial)
+
+## План курса
 
 |№|Тема занятия| Статус| Дата | Ссылка|
 |:---:|:---:|:---:|:---:|:---:|
@@ -18,6 +24,7 @@ Note! Программа обновляется:
 
 
 ## MapReduce. Введение в распределенные вычисления
+<a href='#t1'></a>
 
 [презентация](https://github.com/NameArtem/hse_spark_course/tree/master/pres)
 
