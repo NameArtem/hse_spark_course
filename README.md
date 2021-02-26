@@ -24,7 +24,7 @@
 
 
 ## MapReduce. Введение в распределенные вычисления
-<a href='#t1'></a>
+<a href='t1'></a>
 
 [презентация](https://github.com/NameArtem/hse_spark_course/tree/master/pres)
 
