@@ -7,7 +7,7 @@
 ## Инфраструктура курса
 
 - [Локальный кластре на Docker](https://github.com/NameArtem/hadoop-spark-standalone-docker)
-- [DataBricks Community](/tutorials/databricks_totrial)
+- [DataBricks Community](/tutorials/databricks_tutorial)
 
 ## План курса
 
