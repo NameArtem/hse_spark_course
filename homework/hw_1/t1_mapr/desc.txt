@@ -1,0 +1,13 @@
+transactions.csv:
+	- id
+	- trans
+	- user_id
+	- time_spend
+	- device
+
+
+user.csv:
+	- user_id
+	- email (username at domain)
+	- outcome country
+	- income country
