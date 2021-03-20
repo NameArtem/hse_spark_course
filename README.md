@@ -4,7 +4,9 @@
 - [MapReduce. Введение в распределенные вычисления](#t1)
 - [Apache Spark. RDD](#t2)
 - [Apache Spark. DataFrame](#t3)
+- [Знакомство со Scala](#t4)
 - [Финальный проект](#finpro)
+
 
 
 ## Инфраструктура курса
@@ -19,7 +21,7 @@
 |1| MapReduce. Введение в распределенные вычисления |Готово |27.02.2021||
 |2| HDFS. Apache Spark (RDD) (+ FuncProg на Python) |Готово |06.03.2021||
 |3| Spark SQL. Анализ больших данных |Готово |13.03.2021||
-|4| Подробнее о модели вычислений Spark. Знакомство со Scala |Готово (загрузить)|20.03.2021||
+|4| Подробнее о модели вычислений Spark. Знакомство со Scala |Готово |20.03.2021||
 |5| Spark ML |Готово (загрузить)|27.03.2021||
 |6| Рекомендательные системы на Spark |Готово (загрузить)|03.04.2021||
 |7| Spark Structure Streaming (+ интеграция со Spark ML) |Готово (загрузить)|10.04.2021||
@@ -50,6 +52,14 @@
 [презентация](https://github.com/NameArtem/hse_spark_course/tree/master/pres)
 
 [учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d3)
+
+
+
+## Знакомство со Scala
+<a href='t4'></a>
+
+
+[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d4)
 
 
 
