@@ -99,7 +99,7 @@ def window(xi, n):
 
 new_rdd = rdd\
             .zipWithIndex()\ # добавляем индекс к объекту
-            .flatMap(lambda xi: gen_window(xi, n))\ # создаем пары для окна
+            .flatMap(lambda xi: window(xi, n))\ # создаем пары для окна
             .groupByKey()\ # создаем окно в данных
             .mapValues(lambda vals: [x for (i, x) in sorted(vals)])\ # применяем сортировку для исправления последовательности
             .sortByKey()\ # сортируем по ключу, чтобы согласовать с прошлым шагом
