@@ -6,6 +6,7 @@
 - [Apache Spark. DataFrame](#t3)
 - [Знакомство со Scala](#t4)
 - [Spark ML](#t5)
+- [Spark Recommendations](#t6)
 - [Финальный проект](#finpro)
 
 
@@ -24,7 +25,7 @@
 |3| Spark SQL. Анализ больших данных |Готово |13.03.2021||
 |4| Подробнее о модели вычислений Spark. Знакомство со Scala |Готово |20.03.2021||
 |5| Spark ML |Готово |27.03.2021||
-|6| Рекомендательные системы на Spark |Готово (загрузить)|03.04.2021||
+|6| Рекомендательные системы на Spark |Готово |03.04.2021||
 |7| Spark Structure Streaming (+ интеграция со Spark ML) |Готово (загрузить)|10.04.2021||
 |8| Модели в прод. Управленеи кластеровм  |Готово (загрузить)|17.04.2021||
 
@@ -46,6 +47,8 @@
 
 [учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d2)
 
+[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d2)
+
 
 ## Apache Spark. DataFrame
 <a href='t3'></a>
@@ -53,6 +56,8 @@
 [презентация](https://github.com/NameArtem/hse_spark_course/tree/master/pres)
 
 [учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d3)
+
+[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d3)
 
 
 
@@ -63,12 +68,24 @@
 [учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d4)
 
 
+[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d4)
+
 ## Spark ML
 <a href='t5'></a>
 
 
 [учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d5)
 
+[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d5)
+
+
+## Spark Recommendations
+<a href='t6'></a>
+
+
+[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d6)
+
+[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d6)
 
 
 ## Финальный проект
