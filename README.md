@@ -131,6 +131,54 @@ new_rdd = rdd\
             .filter(lambda x: len(x) == n)) # удаляем лишнее
 
 ```
+
+**NB:** если нет возможности решить в RDD, то решаем на Spark DataFrame (и все скользящие значения)
+
+```python
+from pyspark.sql.window import Window
+import pyspark.sql.functions as F
+
+data = spark.sparkContext.parallelize([
+     (1,'201',100),
+     (1,'202',120),
+     (1,'203',450),
+     (1,'204',200),
+     (1,'205',121),
+     (1,'206',100),
+     (1,'207',101),
+     (1,'208',101),])
+col = ['stock_id','date', 'price']
+df = spark.createDataFrame(data, col)
+
+# явное окно
+window1 = Window.partitionBy('stock_id').orderBy('date')
+
+# установка базовых параметров
+alpha = 0.5  # можно рассчитать (2 / (n-1)), где n - это размер окна
+
+# создание SMA (как первого шага)
+sma =  (F.lag('price', 1).over(window1) + F.lag('price', 2).over(window1) + F.lag('price', 3).over(window1) + F.col('price')) / 4
+
+# создание условий для 1 и других шагов EMA
+condition = F.lag(F.col("sma"), 1).over(window1).isNull() | F.lag(F.col("ema"), 1).over(window1).isNull()
+
+# база EMA
+base_ema = (F.lit(alpha) * F.col('price')) + ((F.lit(1) - F.lit(alpha))*F.lag(F.col("ema"), 1).over(window1))
+
+# функций If / else для соблюдения условий ema
+ema = F.when(condition, (F.lit(alpha) * F.col('price')) + ((F.lit(1) - F.lit(alpha))*sma))\
+       .otherwise(base_ema)
+
+# добавляем нужные колонки и функции расчета
+df = df.withColumn('lg1', F.lag('price', 1).over(window1))\
+       .withColumn('lg2', F.lag('price', 2).over(window1))\
+       .withColumn('lg3', F.lag('price', 3).over(window1))\
+       .withColumn('sma', sma)\
+       .withColumn('ema', F.lit(None))\
+       .withColumn('ema', ema)
+
+```
+
 ----------------------------------
 
 2. Расчет RSI (индикатор, который измеряет соотношение восходящий и нисходящих движений, нормализованный от 0 до 100). **Как понимать:** Данный индикатор отображает «моментум» - скорость и амплитуду с которых изменяется движение цены; насколько сильно изменяется цена в сторону своего движения. Иными словами, индикатор RSI показывает силу тренда и вероятность его смены.
