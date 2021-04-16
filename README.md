@@ -8,6 +8,7 @@
 - [Spark ML](#t5)
 - [Spark Recommendations](#t6)
 - [Spark Recom-Pandas_udf-Streaming](#t7)
+- [Spark Prod](#t8)
 - [Финальный проект](#finpro)
 
 
@@ -27,8 +28,8 @@
 |4| Подробнее о модели вычислений Spark. Знакомство со Scala |Готово |20.03.2021||
 |5| Spark ML |Готово |27.03.2021||
 |6| Рекомендательные системы на Spark |Готово |03.04.2021||
-|7| Ещё о системах рекомендаций. О Spark UDF. Spark Structure Streaming (+ интеграция со Spark ML) |Готово (загрузить)|10.04.2021||
-|8| Модели в прод. Управленеи кластеровм  |Готово (загрузить)|17.04.2021||
+|7| Ещё о системах рекомендаций. О Spark UDF. Spark Structure Streaming (+ интеграция со Spark ML) |Готово|10.04.2021||
+|8| Модели в прод. Управленеи кластеровм  |Готово |17.04.2021||
 
 
 ## MapReduce. Введение в распределенные вычисления
@@ -99,6 +100,14 @@
 [учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d7)
 
 [данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d7)
+
+
+## Spark Prod
+
+<a href='t8'></a>
+
+
+[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d8)
 
 
 

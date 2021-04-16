@@ -1,0 +1,9 @@
+{
+  "app_name": "AppOfMyDream",
+  "source_data_path": "hdfs://path",
+  "output_data_path": "hdfs://path",
+  "spark_set_conf": 
+	{
+		"spark.dynamicAllocation.enabled": "true"	
+	}
+}
