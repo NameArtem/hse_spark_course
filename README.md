@@ -193,6 +193,40 @@ df = df.withColumn('lg1', F.lag('price', 1).over(window1))\
 
 ```
 
+**Spark Pandas_udf**
+
+```Python
+from pyspark.sql import SparkSession, functions, types
+# можно применить функции из statsmodels
+from statsmodels.tsa.api import ExponentialSmoothing, SimpleExpSmoothing
+
+# создаем структуру, которая будет возвращена в Spark DataFrame
+schema = types.StructType([
+    types.StructField("group_id", types.DoubleType(), True),
+    types.StructField("x", types.FloatType(), True),
+    types.StructField("x_ewm", types.FloatType(), True)
+])
+
+# функция UDF (принимает схему и группированный объект из Spark)
+@pandas_udf(schema, PandasUDFType.GROUPED_MAP)
+def my_ema(pdf):
+
+    # работаем с Pandas DataFrame
+    # применяем функцию
+    ewm_col = pdf['x'].ewm(com=0.5).mean()
+
+    # создаем финальный DF
+    output = pd.DataFrame({'group_id': pdf['group_id'], 'x': pdf['x'], 'x_ewm': ewm_col})
+    return output
+
+df.groupby('group_id').apply(my_ema).show()
+```
+
+
+<p align="center"><img src="img/ewm.jpg"></p>
+
+
+
 ----------------------------------
 
 2. Расчет RSI (индикатор, который измеряет соотношение восходящий и нисходящих движений, нормализованный от 0 до 100). **Как понимать:** Данный индикатор отображает «моментум» - скорость и амплитуду с которых изменяется движение цены; насколько сильно изменяется цена в сторону своего движения. Иными словами, индикатор RSI показывает силу тренда и вероятность его смены.
