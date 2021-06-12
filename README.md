@@ -1,15 +1,12 @@
-# hse_spark_course
+# Magnit Spark course
 
 ## Cодержание
 - [Как работают и где живут большие данные](#t1)
 - [Погружение среду Spark. Spark RDD / Spark SQL](#t2)
-- [Advanced SQL (+ pandas UDF)](#t3)
 - [Spark ML / Spark TimeSeries](#t4)
 - [Advanced ML & проверка результатов качества моделей](#t5)
-- [Spark GraphX / Spark Streaming](#t6)
 - [Spark Ecosystem (AirFlow, H2O AutoML)](#t7)
 - [Spark в архитектуре проекта / Spark CI/CD](#t8)
-- [Финальный проект](#finpro)
 
 
 
@@ -24,10 +21,8 @@
 |:---:|:---:|:---:|:---:|:---:|
 |1| Как работают и где живут большие данные |Готово |26.06.2021||
 |2| Погружение среду Spark. Spark RDD / Spark SQL | |||
-|3| Advanced SQL (+ pandas UDF) | |||
 |4| Spark ML / Spark TimeSeries | |||
 |5| Advanced ML & проверка результатов качества моделей | |||
-|6| Spark GraphX / Spark Streaming | |||
 |7| Spark Ecosystem (AirFlow, H2O AutoML) | |||
 |8| Spark в архитектуре проекта / Spark CI/CD | |||
 
@@ -42,10 +37,6 @@
 
 
 
-## Advanced SQL (+ pandas)
-<a name='t3'></a>
-
-
 
 ## Spark ML / Spark TimeSeries
 <a name='t4'></a>
@@ -58,10 +49,6 @@
 
 
 
-## Spark GraphX / Spark Streaming
-<a name='t6'></a>
-
-
 
 
 ## Spark Ecosystem (AirFlow, H2O AutoML)
@@ -72,7 +59,3 @@
 ## Spark в архитектуре проекта / Spark CI/CD
 
 <a name='t8'></a>
-
-
-## Финальный проект
-<a name='finpro'></a>
