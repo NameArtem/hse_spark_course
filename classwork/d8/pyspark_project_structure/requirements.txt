@@ -1,7 +1,0 @@
-pandas
-parse
-pytest
-pytest-cov
-pytest-mock
-pytest-spark
-requests
