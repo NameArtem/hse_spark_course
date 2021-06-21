@@ -16,3 +16,4 @@
 
 - [Локальный кластре на Docker](https://github.com/NameArtem/hadoop-spark-standalone-docker)
 - [DataBricks Community](/tutorials/databricks_tutorial)
+- [Установить локально, только Spark](https://ccubecompany.lpages.co/sparkstarterkit-getspark/)
