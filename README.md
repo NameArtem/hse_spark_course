@@ -21,10 +21,10 @@
 |:---:|:---:|:---:|:---:|:---:|
 |1| Как работают и где живут большие данные |Готово |26.06.2021||
 |2| Погружение среду Spark. Spark RDD / Spark SQL | |||
-|4| Spark ML / Spark TimeSeries | |||
-|5| Advanced ML & проверка результатов качества моделей | |||
-|7| Spark Ecosystem (AirFlow, H2O AutoML) | |||
-|8| Spark в архитектуре проекта / Spark CI/CD | |||
+|3| Spark ML / Spark TimeSeries | |||
+|4| Advanced ML & проверка результатов качества моделей | |||
+|5| Spark Ecosystem (AirFlow, H2O AutoML) | |||
+|6| Spark в архитектуре проекта / Spark CI/CD | |||
 
 
 
