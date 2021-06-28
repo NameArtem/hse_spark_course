@@ -1,0 +1,19 @@
+q1 -> add_nums_lmda = lambda x, y: x + y
+
+q2 -> max_num_lmda = lambda x, y: x if x > y else y
+
+q3 -> even_numbers = [x for x in range(2,201) if x % 2 == 0]
+
+q4 -> powers_of_two = [2 ** x for x in range(0,51)]
+
+q5 -> filter_example = list(filter(only_vowels,sequence))
+
+q6 -> map_example = list(map(lambda x: x ** 2, sequence_lst))
+
+q7 -> map_example_bonus = [element ** 2 for element in sequence_lst]
+
+q8 -> average_map_example = list(map(lambda lst: sum(lst)/len(lst), to_average_seq))
+
+q9 -> multiply_all_elements_example = reduce(lambda x, y: x * y, test_sequence)
+
+q10 -> digit_lst_to_number = reduce(lambda x,y: int(str(x) + str(y)), digits_lst)
