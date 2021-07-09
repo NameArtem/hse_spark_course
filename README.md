@@ -59,6 +59,16 @@
   - https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce
   - https://www.analyticsvidhya.com/blog/2020/08/exploratory-data-analysiseda-from-scratch-in-python/
 
+</br>
+
+## Spark DF
+
+**Задание на самостоятельную работу:**
+
+- на основе [файла-исследование EDА](https://github.com/NameArtem/hse_spark_course/tree/mgnt_tech/works/eda_t1) сделать EDA, но на PySpark (там сейчас в Pandas, нужно повторить на Spark)
+- обратите внимание на повторяющийся код, сделайте из него функции.
+- предложите варианты визуализации из PySpark
+
 
 
 ## Spark ML / Spark TimeSeries
@@ -72,8 +82,6 @@
 
 
 
-
-
 ## Spark Ecosystem (AirFlow, H2O AutoML)
 
 <a name='t7'></a>
@@ -82,3 +90,7 @@
 ## Spark в архитектуре проекта / Spark CI/CD
 
 <a name='t8'></a>
+
+</br>
+
+## Spark Data Quality Проект
