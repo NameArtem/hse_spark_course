@@ -42,6 +42,7 @@
 - [Исследовать и построить социальные связи по email Хиллари Клинтон](https://github.com/NameArtem/hse_spark_course/blob/mgnt_tech/classwork/d1/3_MRJob_tutorial/3_3_emails/3_3.ipynb)
 
 </br>
+
 ## Погружение среду Spark. Spark RDD / Spark SQL
 <a name='t2'></a>
 
