@@ -147,8 +147,8 @@ else:
 ```
 
 - Изучите библиотеку и попробуйте сделать:
-  - поиск аномалий в данных (пример поиска аномалий)[https://www.reg.ru/blog/ishchem-anomalii-s-python-chast-1/]
-  - профилирование в данных (про профилирование)[https://www.machinelearningmastery.ru/automated-data-profiling-99523e51048e/] и (ещё немного)[https://habr.com/ru/post/441538/] + (это)[https://www.dvbi.ru/articles/reading/data-profiling-is-necessary-step-towards-building-DWH]
+  - поиск аномалий в данных [пример поиска аномалий](https://www.reg.ru/blog/ishchem-anomalii-s-python-chast-1/)
+  - профилирование в данных [про профилирование](https://www.machinelearningmastery.ru/automated-data-profiling-99523e51048e/) и [ещё немного](https://habr.com/ru/post/441538/) + [это](https://www.dvbi.ru/articles/reading/data-profiling-is-necessary-step-towards-building-DWH)
 
 
 
