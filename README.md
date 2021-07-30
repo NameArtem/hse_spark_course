@@ -77,17 +77,7 @@
 
 **Рассмотрели:**
 
-- [Знакомство](https://github.com/NameArtem/hse_spark_course/blob/mgnt_tech/pres/p2.pdf) с Spark RDD и Spark SQL(DataFrame)
-- [Распределение ресурсов Spark](https://github.com/NameArtem/hse_spark_course/tree/mgnt_tech/classwork/d2)
-
-**Задание на самостоятельную работу:**
-
-- [Выбрать набор данных для выполнения практических работ](https://cseweb.ucsd.edu/~jmcauley/datasets.html#)
-- Сделать EDA выбранных данных:
-  - https://habr.com/ru/post/353050/
-  - https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce
-  - https://www.analyticsvidhya.com/blog/2020/08/exploratory-data-analysiseda-from-scratch-in-python/
-
+- [Spark ML Regression](https://github.com/NameArtem/hse_spark_course/tree/mgnt_tech/classwork/d4)
 
 
 ## 3.2 Advanced ML Рекомендашки
@@ -96,7 +86,7 @@
 
 **Задание на самостоятельную работу:**
 
-- В [файле](https://github.com/NameArtem/hse_spark_course/tree/mgnt_tech/works/eda_t1) заполнить пропуски и реализовать рекомендации алгоритмом ALS
+- В [файле](https://github.com/NameArtem/hse_spark_course/blob/mgnt_tech/classwork/d5_home/Recom_ALS.ipynb) заполнить пропуски и реализовать рекомендации алгоритмом ALS
 
 ## Spark Ecosystem (AirFlow, H2O AutoML)
 
