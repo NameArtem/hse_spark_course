@@ -21,8 +21,9 @@
 |:---:|:---:|:---:|:---:|:---:|
 |1| Как работают и где живут большие данные |Готово |25.06.2021||
 |2.1| Погружение среду Spark. Spark RDD / Spark SQL | Готово |02.07.2021||
-|2.2| Spark DF, UDF. Особенности работы с данными. 5 Слов о формате | Перенесено |||
-|3| Spark ML / Spark TimeSeries | |||
+|2.2| Spark DF, UDF. Особенности работы с данными. 5 Слов о формате | Готово |||
+|3.1| Spark ML  |Готово |||
+|3.2| Spark Рекомендашки |Перенесено |||
 |4| Advanced ML & проверка результатов качества моделей | |||
 |5| Spark Ecosystem (AirFlow, H2O AutoML) | |||
 |6| Spark в архитектуре проекта / Spark CI/CD | |||
@@ -43,7 +44,7 @@
 
 </br>
 
-## 2 Погружение среду Spark. Spark RDD / Spark SQL
+## 2.1 Погружение среду Spark. Spark RDD / Spark SQL
 <a name='t2'></a>
 
 **Рассмотрели:**
@@ -61,7 +62,7 @@
 
 </br>
 
-## 3 Spark DF
+## 2.2 Spark DF
 
 **Задание на самостоятельную работу:**
 
@@ -71,16 +72,31 @@
 
 
 
-## Spark ML / Spark TimeSeries
+## 3.1 Spark ML
 <a name='t4'></a>
 
+**Рассмотрели:**
+
+- [Знакомство](https://github.com/NameArtem/hse_spark_course/blob/mgnt_tech/pres/p2.pdf) с Spark RDD и Spark SQL(DataFrame)
+- [Распределение ресурсов Spark](https://github.com/NameArtem/hse_spark_course/tree/mgnt_tech/classwork/d2)
+
+**Задание на самостоятельную работу:**
+
+- [Выбрать набор данных для выполнения практических работ](https://cseweb.ucsd.edu/~jmcauley/datasets.html#)
+- Сделать EDA выбранных данных:
+  - https://habr.com/ru/post/353050/
+  - https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce
+  - https://www.analyticsvidhya.com/blog/2020/08/exploratory-data-analysiseda-from-scratch-in-python/
 
 
 
-## Advanced ML & проверка результатов качества моделей
+## 3.2 Advanced ML Рекомендашки
+
 <a name='t5'></a>
 
+**Задание на самостоятельную работу:**
 
+- В [файле](https://github.com/NameArtem/hse_spark_course/tree/mgnt_tech/works/eda_t1) заполнить пропуски и реализовать рекомендации алгоритмом ALS
 
 ## Spark Ecosystem (AirFlow, H2O AutoML)
 
