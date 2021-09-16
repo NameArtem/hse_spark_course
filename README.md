@@ -35,21 +35,21 @@
 ## MapReduce. Введение в распределенные вычисления
 <a href='t1'></a>
 
-[презентация](https://github.com/NameArtem/hse_spark_course/tree/master/pres)
+[презентация](pres)
 
-[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d1)
+[учебный материал](classwork/d1)
 
-[домашнее задание](https://github.com/NameArtem/hse_spark_course/tree/master/homework/hw_1)
+[домашнее задание](homework/hw_1)
 
 
 ## Apache Spark. RDD
 <a href='t2'></a>
 
-[презентация](https://github.com/NameArtem/hse_spark_course/tree/master/pres)
+[презентация](master/pres)
 
-[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d2)
+[учебный материал](classwork/d2)
 
-[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d2)
+[данные](datasets/d2)
 
 
 ## Apache Spark. DataFrame
