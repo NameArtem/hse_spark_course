@@ -55,11 +55,11 @@
 ## Apache Spark. DataFrame
 <a href='t3'></a>
 
-[презентация](https://github.com/NameArtem/hse_spark_course/tree/master/pres)
+[презентация](pres)
 
-[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d3)
+[учебный материал](classwork/d3)
 
-[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d3)
+[данные](datasets/d3)
 
 
 
@@ -67,27 +67,27 @@
 <a href='t4'></a>
 
 
-[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d4)
+[учебный материал](classwork/d4)
 
 
-[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d4)
+[данные](datasets/d4)
 
 ## Spark ML
 <a href='t5'></a>
 
 
-[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d5)
+[учебный материал](classwork/d5)
 
-[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d5)
+[данные](datasets/d5)
 
 
 ## Spark Recommendations
 <a href='t6'></a>
 
 
-[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d6)
+[учебный материал](classwork/d6)
 
-[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d6)
+[данные](datasets/d6)
 
 
 
@@ -97,9 +97,9 @@
 <a href='t7'></a>
 
 
-[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d7)
+[учебный материал](classwork/d7)
 
-[данные](https://github.com/NameArtem/hse_spark_course/tree/master/datasets/d7)
+[данные](datasets/d7)
 
 
 ## Spark Prod
@@ -107,7 +107,7 @@
 <a href='t8'></a>
 
 
-[учебный материал](https://github.com/NameArtem/hse_spark_course/tree/master/classwork/d8)
+[учебный материал](classwork/d8)
 
 
 
@@ -117,7 +117,7 @@
 
 Данные для финального проекта:
 
-- Заголовки новостей с Reddit ([данные](https://github.com/NameArtem/hse_spark_course/tree/master/project/data
+- Заголовки новостей с Reddit ([данные](project/data
 - Скачать индекс [DJI](https://ru.investing.com/indices/us-30)
 - Скачать данные по акциям (выбрать 3 любые компании) из состава индекса DJI([структура индекса](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81_%D0%94%D0%BE%D1%83_%D0%94%D0%B6%D0%BE%D0%BD%D1%81%D0%B0))
 - Скачать данные по акциям (выбрать 2 любые компании), которые не входят в индекс DJI
