@@ -23,13 +23,13 @@
 |№|Тема занятия| Статус| Дата | Ссылка|
 |:---:|:---:|:---:|:---:|:---:|
 |1| Как работают и где живут большие данные |Готово |26.06.2021||
-|2| Погружение среду Spark. Spark RDD / Spark SQL |Готово |03.07.202||
-|3| Advanced SQL (+ pandas UDF) |Готово |10.07.202||
-|4| Spark ML / Spark TimeSeries | Готово |17.07.202||
-|5| Advanced ML & проверка результатов качества моделей | |||
-|6| Spark GraphX / Spark Streaming | |||
-|7| Spark Ecosystem (AirFlow, H2O AutoML) | |||
-|8| Spark в архитектуре проекта / Spark CI/CD | |||
+|2| Погружение среду Spark. Spark RDD / Spark SQL |Готово |03.07.2021||
+|3| Advanced SQL (+ pandas UDF) |Готово |10.07.2021||
+|4| Spark ML / Spark TimeSeries | Готово |17.07.2021||
+|5| Advanced ML & проверка результатов качества моделей | 24.07.2021 |||
+|6| Spark GraphX / Spark Streaming | 4.09.2021|||
+|7| Spark Ecosystem (AirFlow, H2O AutoML) | 11.09.2021|||
+|8| Spark в архитектуре проекта / Spark CI/CD | 18.09.2021|||
 
 
 
@@ -131,7 +131,7 @@
 
 **Данные для проекта** - самостоятельный выбор
 
-### Первое задание по DQ
+### DQ
 
 - Используя PyDeeQu проведите быстрый обзор ваших данных
 
@@ -179,6 +179,72 @@ else:
 - Изучите библиотеку и попробуйте сделать:
   - поиск аномалий в данных (пример поиска аномалий)[https://www.reg.ru/blog/ishchem-anomalii-s-python-chast-1/]
   - профилирование в данных (про профилирование)[https://www.machinelearningmastery.ru/automated-data-profiling-99523e51048e/] и (ещё немного)[https://habr.com/ru/post/441538/] + (это)[https://www.dvbi.ru/articles/reading/data-profiling-is-necessary-step-towards-building-DWH]
+
+
+## DQ последовательность проекта
+
+1. при открытии в файла в проекте, реализовывать его открытие через функцию с PyDeeQu
+
+Использовать анализаторы
+
+```Python
+from pydeequ.analyzers import *
+
+analysisResult = AnalysisRunner(spark) \
+                    .onData(df) \
+                    .addAnalyzer(Size()) \
+                    .addAnalyzer(Completeness("b")) \
+                    .run()
+
+analysisResult_df = AnalyzerContext.successMetricsAsDataFrame(spark, analysisResult)
+analysisResult_df.show()
+```
+
+Использовать профайлеры
+
+```Python
+from pydeequ.profiles import *
+
+result = ColumnProfilerRunner(spark) \
+    .onData(df) \
+    .run()
+
+for col, profile in result.profiles.items():
+    print(profile)
+```
+
+2. Реализовать функцию проверки константных значений
+
+```Python
+from pydeequ.checks import *
+from pydeequ.verification import *
+
+check = Check(spark, CheckLevel.Warning, "Review Check")
+
+checkResult = VerificationSuite(spark) \
+    .onData(df) \
+    .addCheck(
+        check.hasSize(lambda x: x >= 3) \
+        .hasMin("b", lambda x: x == 0) \
+        .isComplete("c")  \
+        .isUnique("a")  \
+        .isContainedIn("a", ["foo", "bar", "baz"]) \
+        .isNonNegative("b")) \
+    .run()
+
+checkResult_df = VerificationResult.checkResultsAsDataFrame(spark, checkResult)
+checkResult_df.show()
+```
+
+3. Создать по итогу таблицу правил для данных, которые прошли тест. Сохранить результат в отдельном файле - формат `json`
+
+Пример
+<p align="center"><img src="img/dq.png"></p>
+
+4. Тестировать DataFrame перед сохранением в Spark. Результат теста сохранять в виде набора правил, который можно использовать для верификации результата при загрузки этого DataFrame
+
+
+-----------------------------------------------------------------
 
 
 
@@ -392,3 +458,16 @@ rdd.mapPartitions(func).collect()
  Пример расчета:
  - Шаг 1. Считаем Raw Force Index = (Pi - Pi-1) * Volume
  - Шаг 2. Считаем Force index = EMA(Raw Force Index) (размер окна из чисел Фибоначчи, на ваш выбор)
+
+ <p align="center"><img src="img/force.jpg"></p>
+
+
+### Задание для проекта (реализация на Spark ML)
+
+<p align="center"><img src="img/project_1_t3.jpg"></p>
+
+**Подсказки**
+
+- Преобразуйте RFM анализ, чтобы узнать "частоту наибольшего сдвига / изменения" для определения окна обучения (вам понадобиться файл `0_rfm.ipynb` из 5 дня обучения)
+
+- Текст можно обработать разными способами, используйте файл `возможности текстовой обработки из Spark ML` для поиска наилучших методов
