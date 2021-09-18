@@ -38,8 +38,8 @@
 
 **Рассмотрели:**
 
-- [ReCap](https://github.com/NameArtem/hse_spark_course/blob/prod/pres/p1.pdf) о больших данных и кластерах
-- [Как запускать и оправлять процессами в MrJob](https://github.com/NameArtem/hse_spark_course/tree/prod/classwork/d1)
+- [ReCap](pres/p1.pdf) о больших данных и кластерах
+- [Как запускать и оправлять процессами в MrJob](classwork/d1)
 
 
 **Задание на самостоятельную работу:**
@@ -254,7 +254,7 @@ checkResult_df.show()
 
 Данные для финального проекта:
 
-- Заголовки новостей с Reddit ([данные](https://github.com/NameArtem/hse_spark_course/tree/master/project/data
+- Заголовки новостей с Reddit ([данные](https://github.com/NameArtem/hse_spark_course/tree/1.1.2/project/data
 - Скачать индекс [DJI](https://ru.investing.com/indices/us-30)
 - Скачать данные по акциям (выбрать 3 любые компании) из состава индекса DJI([структура индекса](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81_%D0%94%D0%BE%D1%83_%D0%94%D0%B6%D0%BE%D0%BD%D1%81%D0%B0))
 - Скачать данные по акциям (выбрать 2 любые компании), которые не входят в индекс DJI
